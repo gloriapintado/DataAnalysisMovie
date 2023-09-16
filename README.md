@@ -6,34 +6,34 @@ This analysis provides two distinct investment strategies primarily dependent on
 
 - The capital-intensive Animation & Adventure categories provide the highest profit of any genre
 - Animation & Adventure genres provide some of the highest median equity multiples with low relative downside
-####Recommendations: 
+#### Recommendations: 
 - Target the Animation & Adventure Genres
 - Target a summertime release
 - Target longer runtimes 
 
 ### Strategy #2: Capital-Efficient/Higher Risk
 - The capital-efficient categories of Horror & Mystery provide slightly lower median equity multiples than more capital-intensive titles, however, they are riskier and offer substantially more upside than other genres
-####Recommendations: 
+#### Recommendations: 
 - Target the Horror & Mystery Genres
 - Target a summertime release
 - Target shorter runtimes 
-
 
 ## The Dataset
 A CSV file (‘tn.movie_budgets.cvs’) that contains information about movie release dates, movies, production budget, domestic gross, and worldwide gross
 A dataset was extracted using SQLite and collected information from the IMDB movie database.
 
 ## Supporting Evidence 
-INSERT CORRELATION MAP CHART
+
+![CORRELATION MAP CHART](https://github.com/gloriapintado/DataAnalysisMovie/blob/main/images/Correlationplot.png)
 
 There is a strong .68 Correlation between Production Budget and Profit. This indicates that, generally, higher budget movies will garner higher profits
-
 There is a very weak negative -0.058 Correlation Between Production Budget and Equity Multiple. This indicates that larger investments will generate large profits, but the rate of return is unrelated to production_budget or the size of investment¶
 
-
-INSERT GROSS PROFIT BARCHART
+![GROSS PROFIT BARCHART](https://github.com/gloriapintado/DataAnalysisMovie/blob/main/images/WorldwideGrossProfitByGenre.png)
 
 The Production Budget and Gross Profit follow very similar trends indicating the importance of production budget in predicting gross profit. Adventure, Animation, and Sci-Fi are the top genres in terms of spending and profit
+
+![Equity Multiple By Genre Boxplot](https://github.com/gloriapintado/DataAnalysisMovie/blob/main/images/BoxPlotGenres.png)
 
 Mean Equity Multiples, however, are substantially higher in the Horror, Mystery, and Thriller Categories all of which are in the relative mid-lower levels of production budgets
 
@@ -43,7 +43,9 @@ The Animation, Adventure and Action categories have substantially higher floors 
 
 Horror and Mystery cannot match the gross returns of the more capital-intensive genres but offer riskier but subtantially higher returns if the movie performs above the mean.
 
-INSERT MONTHS OF RELEASE CHART AND MULTIPLE EQUITY CHART
+![Mean Monthly Worldwide Profit](https://github.com/gloriapintado/DataAnalysisMovie/blob/main/images/MeanMonthlyWorldwideProfit.png)
+
+![Monthly Worldwide Equity Multiple](https://github.com/gloriapintado/DataAnalysisMovie/blob/main/images/MonthlyWorldwideEquityMultiple.png)
 
 The data demonstrates that, historically, summer releases have outperformed in terms of both gross profit and equity multiples. In particular, the month of June seems to offer the best performance across the two aforementioned metrics
 
